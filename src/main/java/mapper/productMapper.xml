@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.Productmapper">
+	
+<!-- 	<select id="getWritingByNum" resultType="model.Product_Info"> -->
+<!-- 	select * from product_info -->
+<!-- 	where product_number = #{product_number} -->
+<!-- 	</select> -->
+	<select id="getMaXNo" resultType="Integer">
+	select max(product_number) from product_info
+	</select>
+	<select id="getItemCount" resultType="Integer">
+	select count(*) as cnt from product_info
+	</select>
+	
+	<select id="getItem" resultType="model.Product_Info">
+	select * from product_info where product_number = #{product_number}
+	</select>
+	
+	<insert id="putItem" parameterType="model.Product_Info">
+	insert into 
+	product_info
+	(product_number, product_name, product_from, product_price, 
+	product_kindof, product_photo, content,cateName, site)
+	
+	values
+	(#{product_number},#{product_name},
+	#{product_from},#{product_price},#{product_kindof},#{product_photo},
+	#{content},#{cateName},	#{site})
+	</insert>
+
+	<select id="getItemList" resultType="model.Product_Info">
+	select * from product_info
+	</select>
+	
+	<select id="getItemListBySite" resultType="model.Product_Info" 
+	parameterType="String">
+	select * from product_info where site=#{site}
+	</select>
+	
+	<select id="getItemsByCate" resultType="model.Product_Info"
+	parameterType="String">
+	select * from product_info where cateName=#{cateName}
+	</select>
+	
+	<select id="getItemsBySC" resultType="model.Product_Info"
+	parameterType="HashMap">
+	select * from product_info where cateName=#{cate} and site=#{site}
+	</select>
+</mapper>

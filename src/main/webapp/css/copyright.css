@@ -1,0 +1,14 @@
+@charset "EUC-KR";
+.newspaper {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
+}
+
+h2 {
+  column-span: all;
+}
+#line{
+	border: 1px solid #ddd;
+	padding:1px;
+}

@@ -1,0 +1,262 @@
+.my-site .main:after { clear: both; content: ''; display: block }
+
+.my-site {
+	background-color: #ffffff;
+	
+}
+.my-site .header {    <!--理쒖긽�떒 -->
+	background-color: #ffffff;
+	height: 70px;
+	display:flex;	
+}
+.my-site .main .content{
+	float:left;
+	width:100%;
+	max-height:length;
+	
+}
+#box-left{
+	flex:1;
+	color:gray;
+}
+#box-center{
+	background:white;
+	flex:1;
+	text-align:center;
+}
+#box-right{
+	background:white;
+	flex:1;
+	text-align:right;
+	width:418px;
+}
+#first{
+	
+	flex:1;		
+}
+#second{
+	flex:1;
+}
+#third{
+	flex:1;
+}
+#fourth{
+	flex:1;
+}
+#fifth{
+	flex:1;
+}
+#zero{
+	flex:1;
+}
+
+
+
+
+.my-site .gnb {	
+	display:flex;
+}
+.my-site .gnb > div {
+	float: left;
+	width: 100px;
+	text-align: center;
+	height: 30px; 
+	border-right: 1px solid #ddd;
+}
+.my-site .gnb > div.selected {
+	background: #ffffff;
+}
+.my-site .main .lnb {
+	float: left;
+	width: 25%;
+	background-color: #00ffff;
+	height: 300px;
+}
+
+.footer {
+	background-color: #400040;
+	border-top: 1px solid #ddd;
+	height: 1px;
+}
+.intro{
+	display:flex;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  flex:1;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+a:link, a:visited {
+  font-size:20px;
+  color: #000040;
+ 
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+a:hover, a:active {
+  background-color: #ffffff;
+}
+
+.center {
+  text-align:center;
+  border-bottom-style: solid;
+  border-bottom-color: #92a8d1;
+  font-size:30px;
+}
+.gbt{
+  text-align:left;
+  border-bottom-style: solid;
+  border-bottom-color: #92a8d1;
+  font-size:30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffffff;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #000000;
+ 
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e3f1ff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+.first{	
+	flex:1;		
+}
+#second{
+	flex:1;
+}
+#third{
+	flex:1;
+}
+#fourth{
+	flex:1;
+}
+#fifth{
+	flex:1;
+}
+#zero{
+	flex:1;
+}
+<!-- intro notice -->
+
+<!-- auction -->
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 15%;
+  max-width: 25%;
+  
+}
+
+.column img {
+  margin: 1px;
+  border: 1px solid #ccc;
+  float: left;
+  
+  
+}
+<!-- my page -->
+.vertical-menu {
+  width: 20px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+<!-- QNA -->

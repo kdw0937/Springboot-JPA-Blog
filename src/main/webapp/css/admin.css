@@ -1,0 +1,81 @@
+@CHARSET "EUC-KR";
+
+.center input[type=text], select {
+  width: 40%;
+  padding: 6px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  algin:left;
+  text-align:center;
+}
+.center input[type=button] {
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.center input[type=reset] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.center input[type=submit] {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.center input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.center {  
+  text-align: left;
+  border: 4px solid green;
+}
+.sub_center {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.center .sub_center btn-group{
+  background-color: #4CAF50; /* Green */
+  border: 3px solid green;
+  color: white;
+  padding: 50px 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+}
+
+.center .btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #400040;
+}
+#tel{
+	width:500px;
+	align:center;
+}
